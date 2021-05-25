@@ -17,11 +17,6 @@
 
   ![screenshot](assets/charts.png)
   
-
-    ## Licenses
-    * MIT
-    * [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  
   ## Technologies
 
     * Express.js
