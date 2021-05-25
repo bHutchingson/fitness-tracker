@@ -13,4 +13,15 @@ router.get('/api/workouts', (req, res) => {
     });
 });
 
+// create a workout
+router.post("/api/workouts", (req, res) => {
+    Workout.create(req.body)
+      .then((data) => {
+        res.json(data);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+});
+
 module.exports = router;
