@@ -2,9 +2,10 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
-const WorkoutSchema = new Schema({
+const workoutSchema = new Schema({
     day: {
       type: Date,
+      default: Date.now
     },
     excersises: [
       {
@@ -37,6 +38,10 @@ const WorkoutSchema = new Schema({
             type: Number,
             trim: true,
             required: "Sets is required"
+        },
+        distance: {
+            type: Number,
+            trim: true
         },
       }
     ]
