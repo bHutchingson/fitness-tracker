@@ -10,7 +10,7 @@ const db = require("./models");
 const app = express();
 
 //routes
-/* app.use(require("./routes/apiroute")); */
+app.use(require("./routes/apiroutes"));
 app.use(require("./routes/htmlroutes"));
 
 app.use(logger("dev"));
@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/populatedb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
