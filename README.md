@@ -8,6 +8,14 @@
   - [Technologies](#technologies)
   - [Dependencies](#dependencies)
   - [Contributing](#contributing)
+
+  ## Screenshots
+
+  ![screenshot](assets/dashboard.png)
+
+  ![screenshot](assets/new-exercise.png)
+
+  ![screenshot](assets/charts.png)
   
 
     ## Licenses
